@@ -1,0 +1,369 @@
+/* Main background #ffffff */
+/* Background footer and main section #2E2F42 */
+/* Footer text color #F4F4FD */
+/* Main text color #434455 */
+/* Title color #2E2F42 */
+/* background button #4D5AE5 */
+
+:root {
+  --main-bg: #ffffff;
+  --durk-bg: #2e2f42;
+  --main-text-color: #434455;
+  --title-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --light-bg: #f4f4fd;
+  --pressed-state: #404bbf;
+  --border-btn-color: #e7e9fc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 2px solid purple;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  background-color: var(--main-bg);
+}
+
+/* Header */
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  text-decoration: none;
+  padding: 24px 0 24px;
+  margin-right: 76px;
+}
+
+.logo > .logo-studio {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.address-nav {
+  font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.addres-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-link {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--pressed-state);
+}
+
+.contacts {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.contacts:is(:hover, :focus) {
+  color: var(--pressed-state);
+}
+
+/* Main */
+
+.hero {
+  background-color: var(--durk-bg);
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 188px;
+}
+
+.hero-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--main-bg);
+  background: var(--accent-color);
+  cursor: pointer;
+  width: 169px;
+  height: 56px;
+}
+
+.hero-button:is(:hover, :focus) {
+  background-color: var(--pressed-state);
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--main-bg);
+  text-align: center;
+  margin-top: 188px;
+  margin-bottom: 48px;
+  width: 496px;
+  height: 120px;
+}
+
+.section-skill {
+  padding-top: 120px;
+}
+.skill-list {
+  display: flex;
+  gap: 24px;
+}
+
+.skill-item {
+  width: 264px;
+  min-height: 104px;
+}
+
+.skill-title {
+  display: none;
+}
+
+.skill-title-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.job-description {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.job-description-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.job-description-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.team-section {
+  background: var(--light-bg);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.team-item {
+  background-color: var(--main-bg);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-color);
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+/* Portfolio */
+
+.section-btn {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter-btn {
+  display: none;
+}
+
+.filter-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.filter-btn-item {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  background: var(--light-bg);
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--border-btn-color);
+  border-radius: 4px;
+}
+
+.filter-btn-item:is(:hover, :focus) {
+  color: var(--main-bg);
+  background: var(--pressed-state);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.projects-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  margin-top: 32px;
+  margin-bottom: 8px;
+}
+
+.projects-text {
+  color: var(--main-text-color);
+  padding-bottom: 32px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--durk-bg);
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer.logo {
+  padding-top: 100px;
+}
+
+.footer-text {
+  color: var(--light-bg);
+  width: 264px;
+  height: 72px;
+  margin-top: 16px;
+}
+
+.footer-logo-studio {
+  color: var(--light-bg);
+}

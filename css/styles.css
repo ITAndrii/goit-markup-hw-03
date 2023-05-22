@@ -97,11 +97,6 @@ body {
 }
 
 .logo>.logo-studio {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
 }
@@ -153,14 +148,15 @@ body {
   background-color: var(--durk-bg);
   width: 1440px;
   margin: 0 auto;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+
 }
 
 .hero-button {
@@ -194,7 +190,7 @@ body {
   height: 120px;
 }
 
-.skill-container {
+.section-skill {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -394,9 +390,8 @@ body {
 }
 
 
-.footer.logo {
+.footer>div>a {
   display: inline-block;
-  padding-top: 100px;
   margin-bottom: 16px;
 }
 
@@ -404,7 +399,7 @@ body {
   color: var(--light-bg);
   width: 264px;
   height: 72px;
- }
+}
 
 .footer-logo-studio {
   color: var(--light-bg);

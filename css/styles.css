@@ -37,7 +37,7 @@ img {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid purple;
+  
 }
 
 body {
@@ -230,8 +230,7 @@ body {
 }
 
 .job-description {
-  padding-top: 120px;
-  padding-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 .job-description-title {
@@ -370,14 +369,12 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
-  margin-top: 32px;
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .projects-text {
   color: var(--main-text-color);
-  padding-bottom: 32px;
-}
+ }
 
 /* Footer */
 
@@ -390,10 +387,18 @@ body {
 }
 
 
-.footer>div>a {
+.logo-footer {
   display: inline-block;
   margin-bottom: 16px;
-}
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  text-decoration: none;
+  }
 
 .footer-text {
   color: var(--light-bg);
